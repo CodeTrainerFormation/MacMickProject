@@ -1,0 +1,11 @@
+﻿@using DomainModel
+@model List<Product>
+
+<h1>liste des produits</h1>
+
+<ul>
+@foreach (var product in Model)
+{
+    <li>@product.Name - @product.Price</li>
+}
+</ul>
